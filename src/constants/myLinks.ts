@@ -7,8 +7,4 @@ export const myLinks = [
     name: "About",
     path: "about",
   },
-  {
-    name: "Games",
-    path: "allgames",
-  },
 ];

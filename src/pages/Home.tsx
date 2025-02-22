@@ -22,9 +22,6 @@ function HomePage() {
         <div className="w-full overflow-x-scroll sm:overflow-x-hidden">
           <GameList />
         </div>
-        <div className="h-32">
-          Hello
-        </div>
       </div>
     </div>
   );
