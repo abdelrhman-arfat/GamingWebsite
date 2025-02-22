@@ -9,6 +9,7 @@ import {
   REGISTER,
 } from "redux-persist";
 import { persistedReducer } from "../persist/persist";
+import { GameApi } from "../Slices/GamesSlice";
 
 export const store = configureStore({
   reducer: persistedReducer,
@@ -17,7 +18,7 @@ export const store = configureStore({
       serializableCheck: {
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
       },
-    }),
+    }).concat(GameApi.middleware),
 });
 
 export const persistor = persistStore(store);

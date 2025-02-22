@@ -6,16 +6,24 @@ function HomePage() {
   return (
     <div className="w-full flex flex-col gap-6 h-20">
       <div className="w-full">
-        <h1 className="text-2xl sm:text-3xl">Hello In Game Hub !</h1>
+        <h1 className="text-2xl sm:text-3xl text-neutral-900">
+          Hello In Game Hub !
+        </h1>
       </div>
       <div className="w-full gap-4 sm:items-center flex flex-col sm:flex-row ">
         <InputSection />
         <FilterCategorySectoin />
       </div>
+      <hr className="w-full border-2 " />
       <div>
-        All Games
-        <div className="w-full overflow-x-scroll">
+        <h1 className="text-xl sm:text-2xl border-b-pink-700 border-b-2 w-fit">
+          Games List
+        </h1>
+        <div className="w-full overflow-x-scroll sm:overflow-x-hidden">
           <GameList />
+        </div>
+        <div className="h-32">
+          Hello
         </div>
       </div>
     </div>
@@ -25,7 +33,7 @@ function HomePage() {
 export { HomePage };
 /*
 
-  useEffect(() => {
+useEffect(() => {
     const options = {
       method: "GET",
       url: "https://free-to-play-games-database.p.rapidapi.com/api/games",
@@ -42,5 +50,4 @@ export { HomePage };
       console.log(response.data);
     })();
   }, []);
-
 */

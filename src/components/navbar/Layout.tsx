@@ -6,10 +6,10 @@ const Layout = () => {
   return (
     <MyProvider>
       <div className="min-h-screen">
-        <header className="w-full">
+        <header className="w-full shadow-sm ">
           <Navbar />
         </header>
-        <main className="w-full mt-2 h-full">
+        <main className="w-full mt-5 h-full">
           <div className="w-[93%] mx-auto">
             <Outlet />
           </div>

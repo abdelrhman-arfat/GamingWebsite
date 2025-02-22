@@ -4,3 +4,23 @@
 body {
   font-family: "Roboto";
 }
+.search-btn:hover {
+  transform: scale(1.02);
+  letter-spacing: 2px;
+}
+.search-btn {
+  background: #834d9b;
+  background: -webkit-linear-gradient(to right, #d04ed6, #834d9b);
+  background: linear-gradient(to right, #d04ed6, #834d9b);
+  transition: all 0.2s ease-in-out;
+}
+.game-link-btn {
+  transition: all 0.2s ease-in-out;
+  background: #004cb5;
+  background: -webkit-linear-gradient(to right, #004181, #0061a7);
+  background: linear-gradient(to right, #004e97, #003873);
+}
+.game-link-btn:hover {
+  transform: scale(1.02);
+  word-spacing: 2px;
+}
