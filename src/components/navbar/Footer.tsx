@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <div className="w-full h-32 flex flex-col items-center justify-center">
+    <div className="w-full  h-32 flex flex-col items-center justify-center">
       <p>
         &copy; {new Date().getFullYear()} Gaming Website. All rights reserved.
       </p>
