@@ -8,7 +8,7 @@ import { GatPlatFormName } from "../../func/hooks/Selector";
 const FilterCategorySectoin = () => {
   const dispatch = useAppDispatch();
   const platform = GatPlatFormName();
-  const links = ["pc", "browser"];
+  const links = ["pc", "browser", "All"];
   const [isOpen, setisOpen] = useState<SetStateAction<boolean>>(false);
   return (
     <div className="relative shadow-md max-w-[200px]">
@@ -37,10 +37,14 @@ const FilterCategorySectoin = () => {
           {links.map((platformName, index) => (
             <li
               onClick={() => {
-                dispatch(changePlatFormName(platformName));
+                if (platformName.toLocaleLowerCase() === "all") {
+                  dispatch(changePlatFormName(""));
+                } else {
+                  dispatch(changePlatFormName(platformName));
+                }
                 setisOpen(false);
               }}
-              className={` hover:bg-neutral-300 duration-300 py-2 px-4 rounded-md my-1 ${platformName === platform && "bg-neutral-200"} `}
+              className={` hover:bg-neutral-300 duration-300 py-2 px-4 rounded-md my-1 ${platformName === platform && "bg-neutral-200"} ${platform === "" && platformName === "All" && "bg-neutral-200"} `}
               key={platformName + "-" + index}
             >
               {platformName}

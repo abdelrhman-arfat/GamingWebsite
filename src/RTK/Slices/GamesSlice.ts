@@ -21,7 +21,16 @@ export const GameApi = createApi({
     getAllGames: builder.query<Game[], void>({
       query: () => `/games`,
     }),
+    // !Ignor unnessary fetching with skip
+    getGamesByPlatform: builder.query<Game[], string>({
+      query: (platform = "pc") => ({
+        url: "/games",
+        params: {
+          platform,
+        },
+      }),
+    }),
   }),
 });
 
-export const { useGetAllGamesQuery } = GameApi;
+export const { useGetAllGamesQuery, useGetGamesByPlatformQuery } = GameApi;
