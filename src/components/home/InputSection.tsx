@@ -16,7 +16,7 @@ const InputSection = () => {
         }}
         name="GameName"
         placeholder="Search..."
-        className=" focus:scale-105 duration-300 focus:shadow-sm h-[40px] w-full rounded-l-md outline-none px-4 py-2 bg-gray-100"
+        className=" focus:rounded-l-none duration-300 focus:shadow-sm h-[40px] w-full rounded-l-md outline-none px-4 py-2 bg-gray-100"
         type="text"
       />
     </form>
