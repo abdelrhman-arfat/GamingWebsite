@@ -1,11 +1,20 @@
-# React + TypeScript + Vite
+# 🎮 Gaming Website  
 
-Gaming website :
-tools : React - tailwind - redux toolkit persist & RKT Quary 
+A dynamic and interactive gaming platform where users can explore and review games.  
 
-This website show you more +400 games and has filter with name or platform
+## 🚀 Features  
+- 🎲 **Browse & Search Games**  
 
-URL : https://gaming-website-sepia.vercel.app
+## 🛠️ Tech Stack  
+- **Frontend:** React, Redux Toolkit, Tailwind CSS  
+- **State Management:** Redux Toolkit with Persist  
 
+ 
 
+## 🏗️ Getting Started  
+``` npm run dev ```
 
+### 1️⃣ Clone the Repository  
+
+```bash
+git clone https://github.com/abdelrhman-arfat/GamingWebsite.git
